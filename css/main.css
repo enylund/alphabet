@@ -1,0 +1,635 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+   font-family: 'balloon_bqregular';
+   src: url('../fonts/balloonbq-webfont.eot');
+   src: url('../fonts/balloonbq-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/balloonbq-webfont.woff') format('woff'),
+       url('../fonts/balloonbq-webfont.ttf') format('truetype'),
+        url('../fonts/balloonbq-webfont.svg#balloon_bqregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'churchward_maoriregular';
+   src: url('../fonts/bluhead_studio_-_churchward_maori-webfont.eot');
+   src: url('../fonts/bluhead_studio_-_churchward_maori-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bluhead_studio_-_churchward_maori-webfont.woff') format('woff'),
+        url('../fonts/bluhead_studio_-_churchward_maori-webfont.ttf') format('truetype'),
+        url('../fonts/bluhead_studio_-_churchward_maori-webfont.svg#churchward_maoriregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+@font-face {
+   font-family: 'churchward_mariannashadow';
+   src: url('../fonts/bluhead_studio_-_churchward_marianna_shadow-webfont.eot');
+   src: url('../fonts/bluhead_studio_-_churchward_marianna_shadow-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bluhead_studio_-_churchward_marianna_shadow-webfont.woff') format('woff'),
+        url('../fonts/bluhead_studio_-_churchward_marianna_shadow-webfont.ttf') format('truetype'),
+        url('../fonts/bluhead_studio_-_churchward_marianna_shadow-webfont.svg#churchward_mariannashadow') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+@font-face {
+   font-family: 'churchward_china';
+   src: url('../fonts/bluhead_studio_-_churchward_chinatype_exbold-webfont.eot');
+   src: url('../fonts/bluhead_studio_-_churchward_chinatype_exbold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bluhead_studio_-_churchward_chinatype_exbold-webfont.woff') format('woff'),
+        url('../fonts/bluhead_studio_-_churchward_chinatype_exbold-webfont.ttf') format('truetype'),
+        url('../fonts/bluhead_studio_-_churchward_chinatype_exbold-webfont.svg#churchward_chinatype') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+
+#pageWrap {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:-2000;
+}
+
+#fonts {
+  position: absolute;
+  left: 5%;
+  top: 40px;
+}
+
+#backgrounds {
+  position:absolute;
+  right: 5%;
+  top: 40px;
+}
+
+
+
+.font1{
+  font-family: 'balloon_bqregular';
+}
+
+.font2{
+  font-family: 'churchward_maoriregular';
+}
+
+.font3{
+  font-family: 'churchward_mariannashadow';
+}
+
+.font4{
+  font-family: 'churchward_china';
+}
+
+.font5{
+  font-family: Arial, sans-serif;
+}
+
+.background1{
+  background-image: url(../backgrounds/background_1.png); 
+  background-repeat: no-repeat; 
+  background-position: left top;
+
+  color:#93278f;
+}
+
+.background2{
+  background-image: url(../backgrounds/background_2.png); 
+  background-repeat: no-repeat; 
+  background-position: left top;
+
+  color: #fbb03b;
+
+}
+
+.background3{
+  background-color: blue;
+}
+
+.background4{
+  background-color: white;
+}
+
+.background5{
+  background-color: blue;
+  border:10px solid black;
+  color:black;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+}
+
+#print {
+  font-size:200px;
+  text-align:center;
+  line-height:0.75em;
+}
+
+input {
+  z-index:100;
+}
+
+#input_container {
+
+    position: fixed;
+    bottom: 20px;
+    left: 40% ;
+
+}
+
+#title {
+  z-index:-100;
+  position:absolute;
+  text-align:center;
+  width:100%;
+  font-size:40px;
+  top:20px;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    padding: 15px;
+    background: transparent;
+    color:black;
+    font-size: 13px;
+    outline: none;
+    width:110%;
+    height:150%;
+}
+
+input[type=text]:focus {
+  color:white;
+  border-color: white;
+  background: black;
+}
+
+#character_count {
+  position:fixed;
+  bottom: 25px;
+  left:5%;
+
+  font-size: 23px;
+}
+
+input[type='radio']{
+  display:inline;
+}
+
+
+@-webkit-keyframes fontbulger {
+0% { top:    0px; }
+50% { top: -50px; }
+100% {top: 0px;}
+}
+
+
+#number1 {
+  position:relative;
+  -webkit-animation:  fontbulger 5s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number2 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.5s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number3 {
+  position:relative;
+  -webkit-animation:  fontbulger 5.3s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number4 {
+  position:relative;
+  -webkit-animation:  fontbulger 3.7s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number5 {
+  position:relative;
+  -webkit-animation:  fontbulger 5.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number6 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.9s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+
+#number7 {
+  position:relative;
+  -webkit-animation:  fontbulger 5.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number8 {
+  position:relative;
+  -webkit-animation:  fontbulger 4s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number9 {
+  position:relative;
+  -webkit-animation:  fontbulger 3.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+
+#number10 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.9s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number11 {
+  position:relative;
+  -webkit-animation:  fontbulger 5.5s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number12 {
+  position:relative;
+  -webkit-animation:  fontbulger 3.8s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number13 {
+  position:relative;
+  -webkit-animation:  fontbulger 6.9s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number14 {
+  position:relative;
+  -webkit-animation:  fontbulger 6.5s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number15 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number16 {
+  position:relative;
+  -webkit-animation:  fontbulger 6.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number17 {
+  position:relative;
+  -webkit-animation:  fontbulger 6s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number18 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.6s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number19 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.8s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number20 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number21 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.9s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number22 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.1s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number23 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.7s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number24 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.4s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number25 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.2s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#number26 {
+  position:relative;
+  -webkit-animation:  fontbulger 4.9s infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
