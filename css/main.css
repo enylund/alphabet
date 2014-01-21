@@ -205,7 +205,12 @@ textarea {
 }
 
 .background3{
-  background-color: blue;
+  background-image: url(../backgrounds/background_3.png); 
+  background-repeat: no-repeat; 
+  background-position: left top;
+
+  color: #ff00ff;
+
 }
 
 .background4{
