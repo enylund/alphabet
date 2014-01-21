@@ -209,8 +209,6 @@ textarea {
   background-repeat: no-repeat; 
   background-position: left top;
 
-  color: #ff00ff;
-
 }
 
 .background4{
@@ -285,9 +283,11 @@ input[type='radio']{
 
 
 @-webkit-keyframes fontbulger {
-0% { top:    0px; }
-50% { top: -50px; }
-100% {top: 0px;}
+0% { top:    0px; left: 0px; }
+25% { left: -10px;}
+50% { top: -50px; left: 0px;}
+75% { left: 10px;}
+100% {top: 0px; left: 0px;}
 }
 
 
